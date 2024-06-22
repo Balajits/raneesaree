@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.wall_img_1 {
+    width: 100%;
+    height: 600px;
+    margin: 40px auto;
+    transition: all .2s ease-in-out;
+}
+
+.wall_img_2 {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    transition: all .2s ease-in-out;
+}
+
+.wall_img_1:hover,
+.wall_img_2:hover {
+    filter: grayscale(80%)
+}
+
+.wall_img_1:before,
+.wall_img_2:before {
+    content: attr(id);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    mix-blend-mode: overlay;
+}
+
+.wall_img_1:hover::before,
+.wall_img_2:hover::before {
+    content: attr(id);
+    opacity: 1;
+}
+
+.test-shadow {
+    text-shadow: 3px 2px 4px skyblue !important;
+}
+
+
+.bg-trans {
+    background-color: transparent;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: linear-gradient(10deg, #b7eefd, #fff, #edc6fd);
+    background-color: #f0f8fb;
+    color: #252644;
+}
+
+
+.carousel-inner .carousel-item {
+    transition: transform 1s ease;
+}
+
+.nav-bg {
+    /* background: linear-gradient(40deg, #b7eefd, #edc6fd) */
+    background: linear-gradient(40deg, #b7eefd, #fff, #edc6fd);
+    color: #252644;
+}
+
+.heading {
+    font-weight: 300;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 25px;
+}
+
+.about-bg {
+    backdrop-filter: blur(6px) saturate(102%);
+    -webkit-backdrop-filter: blur(6px) saturate(102%);
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+.about-img-shape {
+    margin: 30px;
+    z-index: 1
+}
+
+.about-img-shape::before {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+    content: '';
+    background-color: var(--bs-dark);
+    transition: .5s;
+
+}
+
+.about-img-shape:after {
+    position: absolute;
+    right: -31px;
+    bottom: -30px;
+    width: 80%;
+    height: 90%;
+    z-index: -1;
+    content: '';
+    background-color: var(--bs-dark);
+    transition: .5s;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bootstrap_gradient {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 1) 85%), radial-gradient(ellipse at top left, rgba(13, 110, 253, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(255, 228, 132, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(112.520718, 44.062154, 249.437846, 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+}
+
+/* #b7eefd #edc6fd */
+
+/* #9ACEEC;  68BBE3 */
