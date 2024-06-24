@@ -7,7 +7,6 @@ function scrollFunction() {
         ele.classList.add("shadow-lg");
         ele.classList.remove('bg-trans');
         ele.classList.add('bg-light');
-        // ele.classList.add('nav-bg');
         
     } else {
 
@@ -15,6 +14,5 @@ function scrollFunction() {
         ele.classList.remove("shadow-lg");
         ele.classList.add('bg-trans');
         ele.classList.remove('bg-light');
-        // ele.classList.remove('nav-bg');
     }
 }
