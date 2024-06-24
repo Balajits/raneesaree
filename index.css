@@ -46,15 +46,35 @@
 
 
 .bg-trans {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 body {
     font-family: "Nunito", sans-serif;
     background: linear-gradient(10deg, #b7eefd, #fff, #edc6fd);
-    background-color: #f0f8fb;
+    /* background-color: #f0f8fb; */
     color: #252644;
+    scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 
 .carousel-inner .carousel-item {
@@ -124,3 +144,56 @@ body {
 /* #b7eefd #edc6fd */
 
 /* #9ACEEC;  68BBE3 */
+
+#navbar {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.main {
+    --transition-duration: 0.5s;
+    --transition-timing-function: ease;
+}
+
+.top-75 {
+    top: 75% !important;
+}
+
+.text-us {
+    background: linear-gradient(10deg, #b7eefd, #edc6fd);
+    border: 0px;
+    color: #000;
+    font-weight: 300;
+}
+
+.text-us:hover {
+    color: #000;
+    border: 0px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 0 #eee;
+}
+
+.text-us:focus {
+    outline: none;
+    border: 0px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
