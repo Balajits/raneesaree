@@ -150,8 +150,9 @@ body {
 }
 
 .main {
-    --transition-duration: 0.5s;
-    --transition-timing-function: ease;
+    transition: 1.20s linear;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
 }
 
 .top-75 {
@@ -170,6 +171,13 @@ body {
     border: 0px;
     transition: 0.5s;
     box-shadow: 5px 5px 0 #eee;
+}
+
+.all-products-btn{
+    background: linear-gradient(10deg, #b7eefd, #edc6fd);
+    color: #000;
+    border: 0px;
+    margin-top: 16px;
 }
 
 .text-us:focus {
