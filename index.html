@@ -14,12 +14,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>RANEE SAREES</title>
 </head>
 
 <body>
-  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-    <i class="fas fa-arrow-up"></i>
+  <button type="button" class="btn btn-lg" id="btn-back-to-top">
+    <i class="bi bi-arrow-up-short"></i>
   </button>
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top ">
     <div class="container-fluid">
@@ -62,13 +63,13 @@
 
   <div class="main">
     <!-- carousel starts -->
-    <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide carousel-fade">
+    <div id="carouselBanner" data-bs-ride="carousel" class="carousel slide carousel-fade">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
@@ -85,12 +86,12 @@
 
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner"
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
@@ -124,12 +125,14 @@
     <!-- about us Ends -->
 
     <!-- our products starts-->
-    <div class="container">
+    <div>
       <h4 class="heading">Our Products</h4>
+    </div>
+    <div class="container-fluid  py-1 mb-4 d-flex justify-content-center">     
 
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem;">
+      <div class="row container">
+        <div class="col-12 col-md-4 col-lg-4 py-3">
+          <div class="card card-hover" style="width: 18rem;">
             <img src="./assets/images/gal8.jpeg" class="card-img-top" height="400px" alt="...">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
@@ -137,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 col-lg-4 py-3">
           <div class="card" style="width: 18rem;">
             <img src="./assets/images/gal7.jpeg" class="card-img-top" height="400px" alt="...">
             <div class="card-body">
@@ -146,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 col-lg-4">
           <div class="card" style="width: 18rem;">
             <img src="./assets/images/gal2.jpeg" class="card-img-top" height="400px" alt="...">
             <div class="card-body">
@@ -155,14 +158,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <a class="btn all-products-btn" href="./products.html">View All Products</a>
+        <div class="row container">
+          <div class="col-12 text-center">
+            <a class="btn all-products-btn" href="./products.html">View All Products</a>
+          </div>
         </div>
       </div>
+      
     </div>
-
+    
 
 
     <!-- our products Ends -->

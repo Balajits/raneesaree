@@ -10,14 +10,20 @@
     <!-- Bootstrap CSS -->
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./index.css" rel="stylesheet">
+    <link href="./gallery.css" rel="stylesheet">
+    <link href="./assets/dist/css/gallery.min.css" rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>RANEE SAREES</title>
 </head>
 
 <body class="body-bg">
+    <button type="button" class="btn btn-lg" id="btn-back-to-top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img-fluid" src="./assets/images/RANEE.png" alt="My Brand"
@@ -64,95 +70,150 @@
                     <div class="lc-block text-center">
                         <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
                         <h2 editable="inline" class="display-2 mb-0"><b>Gallery</b></h2>
-                        <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus
-                            <br> id ligula malesuada placerat sit amet quis enim.
+                        <p editable="inline"> We are committed to working with our
+                            <br> partners and customers to develop products that make a difference in the world.
                         </p>
                     </div><!-- /lc-block -->
                 </div><!-- /col -->
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row ">
-                        <div class="col-sm-6">
-                            <div class="lc-block">
-                                <div lc-helper="background" class="wall_img_1 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal1.jpeg');"
-                                    id="The Photo Title">
-                                </div>
-                                <div lc-helper="background" class="wall_img_1 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal2.jpeg');"
-                                    id="landscape 2">
-                                </div>
-                            </div>
-                            <!-- /lc-block -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal3.jpeg');"
-                                    id="My title goes here">
-                                </div>
-                            </div>
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal4.jpeg');"
-                                    id="This is my landscape">
-                                </div>
-                            </div>
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal6.jpeg');"
-                                    id="landscape 3">
-                                </div>
-                            </div>
-                            <!-- /lc-block -->
-                        </div>
-                    </div>
-                    <!-- /lc-block -->
-                </div><!-- /col -->
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="lc-block">
-                                <div lc-helper="background" class="wall_img_1 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal7.jpeg');"
-                                    id="My photo">
-                                </div>
-                            </div>
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_1 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal8.jpeg');"
-                                    id="landscape 5">
-                                </div>
-                            </div>
-                            <!-- /lc-block -->
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal9.jpeg');"
-                                    id="landscape 8">
-                                </div>
-                            </div>
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal11.jpeg');"
-                                    id="landscape 11">
-                                </div>
-                            </div>
-                            <div class="lc-block ">
-                                <div lc-helper="background" class="wall_img_2 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('./assets/images/gal10.jpeg');"
-                                    id="landscape 10">
-                                </div>
-                            </div>
-                            <!-- /lc-block -->
-                        </div>
-                    </div>
-                    <!-- /lc-block -->
-                </div><!-- /col -->
-            </div><!-- /col -->
         </div>
+
+        <!-- main starts -->
+        <!-- Project 2 - Bootstrap Brain Component -->
+        <section class="py-5 py-xl-8">
+            <!-- <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                        <h2 class="mb-4 display-5 text-center">Our Projects</h2>
+                        <p class="text-secondary mb-5 text-center lead fs-4">We are committed to working with our
+                            partners and customers to develop products that make a difference in the world.</p>
+                        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container overflow-hidden">
+                <div class="row gy-2 g-md-2 g-xl-3 bsb-project-2-grid">
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./assets/images/gal1.jpeg"
+                                    alt="Photography">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">Canvas Lover</h3>
+                                <div class="text-white bsb-hover-fadeInRight">Photography</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./assets/images/gal10.jpeg"
+                                    alt="Nature">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">Red Lava</h3>
+                                <div class="text-white bsb-hover-fadeInDown">Nature</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./assets/images/gal3.jpeg"
+                                    alt="Adventure">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">Jungle Book</h3>
+                                <div class="text-white bsb-hover-fadeInRight">Adventure</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./assets/images/gal4.jpeg"
+                                    alt="Adventure">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">Wavy Road</h3>
+                                <div class="text-white bsb-hover-fadeInDown">Adventure</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./assets/images/gal4.jpeg"
+                                    alt="Photography">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">Golden Leaves</h3>
+                                <div class="text-white bsb-hover-fadeInDown">Photography</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./assets/images/gal6.jpeg"
+                                    alt="Design">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">Minimal Notions</h3>
+                                <div class="text-white bsb-hover-fadeInDown">Design</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./assets/images/gal2.jpeg"
+                                    alt="Design">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">Bright Winks</h3>
+                                <div class="text-white bsb-hover-fadeInRight">Design</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale-up bsb-hover-scale" src="./assets/images/gal8.jpeg"
+                                    alt="Photography">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInLeft">Innovative Day</h3>
+                                <div class="text-white bsb-hover-fadeInRight">Photography</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-12 col-md-4 bsb-project-2-item">
+                        <figure class="rounded rounded-3 overflow-hidden bsb-overlay-hover m-0">
+                            <a href="#!">
+                                <img class="img-fluid bsb-scale bsb-hover-scale-up" src="./assets/images/gal7.jpeg"
+                                    alt="Nature">
+                            </a>
+                            <figcaption>
+                                <h3 class="text-white bsb-hover-fadeInUp">Red Lava</h3>
+                                <div class="text-white bsb-hover-fadeInDown">Nature</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- main ends -->
 
         <!-- footer starts  -->
         <section>
@@ -230,7 +291,17 @@
 
 
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <script src="./assets/dist/js/main.js"></script>
+    <script src="./assets/dist/js/isotopejquery.min.js"></script>
+
+    <script src="./assets/dist/js/isotope.min.js"></script>
+    <script src="./assets/dist/js/isotopePack.min.js"></script>
+    <script src="./assets/dist/js/isotopeimg.min.js"></script>
+    <script src="./assets/dist/js/gallery.js"></script>
+
+
 
 </body>
 
