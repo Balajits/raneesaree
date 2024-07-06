@@ -146,12 +146,12 @@ body {
 /* #9ACEEC;  68BBE3 */
 
 #navbar {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation: 1s ease-in 0s 1 slideInFromLeft;
 }
 
 .main {
-    transition: 1.20s linear;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    /* transition: 1.20s linear;
+    animation: 1s ease-out 0s 1 slideInFromLeft; */
 
 }
 
