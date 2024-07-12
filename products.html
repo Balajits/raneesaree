@@ -79,212 +79,201 @@
         <section class="container xl-8">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0"
-                        role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">6 Yards</a>
+                    <a class="nav-link active" id="tenyards-tab" data-bs-toggle="tab" href="#tenyards" role="tab"
+                        aria-controls="tenyards" aria-selected="true">10.5 Yards</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab"
-                        aria-controls="simple-tabpanel-1" aria-selected="false">10.5 Yards</a>
+                    <a class="nav-link" id="sixyards-tab" data-bs-toggle="tab" href="#sixyards" role="tab"
+                        aria-controls="sixyards" aria-selected="false">6 Yards</a>
                 </li>
             </ul>
             <div class="tab-content pt-5" id="tab-content">
-                <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
-                    <h5>6 Yards</h5>
+                <div class="tab-pane active" id="tenyards" role="tabpanel" aria-labelledby="tenyards-tab">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="6yards-0" data-bs-toggle="tab" href="#simple-6yards-0"
-                                role="tab" aria-controls="simple-6yards-0" aria-selected="true">One side</a>
+                            <a class="nav-link active" id="tenyardsoneside-tab" data-bs-toggle="tab"
+                                href="#tenyardsoneside" role="tab" aria-controls="tenyardsoneside"
+                                aria-selected="true">One side</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " id="6yards-1" data-bs-toggle="tab" href="#simple-6yards-1"
-                                role="tab" aria-controls="simple-6yards-1" aria-selected="true">40 * 2</a>
+                            <a class="nav-link" id="tenyards40-tab" data-bs-toggle="tab" href="#tenyards40" role="tab"
+                                aria-controls="tenyards40" aria-selected="false">40 * 2</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " id="6yards-2" data-bs-toggle="tab" href="#simple-6yards-2"
-                                role="tab" aria-controls="simple-6yards-2" aria-selected="true">Double side</a>
+                            <a class="nav-link" id="tenyardsdoubleside-tab" data-bs-toggle="tab"
+                                href="#tenyardsdoubleside" role="tab" aria-controls="tenyardsdoubleside"
+                                aria-selected="false">Double side</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " id="6yards-3" data-bs-toggle="tab" href="#simple-6yards-3"
-                                role="tab" aria-controls="simple-6yards-3" aria-selected="true">Poonam</a>
+                            <a class="nav-link" id="tenyardspoonam-tab" data-bs-toggle="tab" href="#tenyardspoonam"
+                                role="tab" aria-controls="tenyardspoonam" aria-selected="false">Poonam</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link " id="6yards-4" data-bs-toggle="tab" href="#simple-6yards-4"
-                                role="tab" aria-controls="simple-6yards-4" aria-selected="true">Sudesi</a>
+                            <a class="nav-link" id="tenyardssudesi-tab" data-bs-toggle="tab" href="#tenyardssudesi"
+                                role="tab" aria-controls="tenyardssudesi" aria-selected="false">Sudesi</a>
                         </li>
                     </ul>
                     <div class="tab-content pt-5" id="tab-content">
-                        <div class="tab-pane active" id="simple-6yards-0" role="tabpanel"
-                            aria-labelledby="6yards-0">
-                            one side
-                        </div>
-                        <div class="tab-pane " id="simple-6yards-1" role="tabpanel"
-                            aria-labelledby="6yards-1">
-                            40 * 2
-                        </div>
-                        <div class="tab-pane " id="simple-6yards-2" role="tabpanel"
-                            aria-labelledby="6yards-2">
-                            double side
-                        </div>
-                        <div class="tab-pane " id="simple-6yards-3" role="tabpanel"
-                            aria-labelledby="6yards-3">
-                            poonam
-                        </div>
-                        <div class="tab-pane " id="simple-6yards-4" role="tabpanel"
-                            aria-labelledby="6yards-4">
-                            Sudesi
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">Tab 2
-                    selected</div>
-            </div>
-            <div class="gallery-wrap">
+                        <!-- 10 yards oneside starts -->
+                        <select class="form-select form-select-sm" onchange="onselectdrop(event)" aria-label=".form-select-sm example">
+                            <option selected>select</option>
+                            <option value="plain">plain</option>
+                            <option value="wax">wax</option>
+                            <option value="screen">screen</option>
+                            <option value="block">block</option>
+                            <option value="tie&dye">tie & dye</option>
+                            <option value="bhatik">Bhatik</option>
+                            <option value="screenwax">screen wax</option>
+                            <option value="waxscreen">wax screen</option>
+                            <option value="waxblock">wax block</option>
+                            <option value="blockwax">block wax</option>
+                            <option value="artborder">Art border</option>
+                            <option value="crossdesign">Cross design</option>
+                            <option value="artscreenborder">Art screen border</option>
+                          </select>
+                        <div class="tab-pane active" id="tenyardsoneside" role="tabpanel"
+                            aria-labelledby="tenyardsoneside-tab">
 
-                <ul id="filters" class="clearfix">
-                    <li><span class="filter active" data-filter=".6yards, .strategy, .logo, .web">All</span></li>
-                    <li><span class="filter" data-filter=".6yards">6 yards</span></li>
-                    <li><span class="filter" data-filter=".strategy">9 yards</span></li>
-                    <li><span class="filter" data-filter=".logo">10 yards</span></li>
-                    <li><span class="filter" data-filter=".web">12 yards</span></li>
-                </ul>
+                            <div id="test"></div>
+                            <!-- <div class="gallery-item">
+                                <div class="">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Red lava</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="./assets/images/10.5_plain/10.5plain_1.jpg" height="300px"
+                                            width="100%" alt="" />
 
-                <div id="gallery">
-
-                    <div class="shadow-lg" data-cat="logo">
-                        <div class="gallery-item logo">
-                            <div class="inside">
-                                <div class="details">
-                                    <div class="text">
-                                        <h2>Red lava</h2>
-                                        <p>Logo</p>
+                                    </div>
+                                    <div class="enquire shadow-lg">
+                                        <h4>Red Lava</h4>
+                                        <p>Description about the Red Lava</p>
+                                        <a onclick="enquireNow()"
+                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_1.jpg&phone=+916379473471"
+                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
                                     </div>
                                 </div>
-                                <div class="overlay"></div>
-                                <img src="./assets/images/gal7.jpeg" height="300px" width="100%" alt="" />
+                            </div>
+                            <div class="gallery-item">
+                                <div class="">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Red lava</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="./assets/images/10.5_plain/10.5plain_2.jpg" height="300px"
+                                            width="100%" alt="" />
 
+                                    </div>
+                                    <div class="enquire shadow-lg">
+                                        <h4>Red Lava</h4>
+                                        <p>Description about the Red Lava</p>
+                                        <a onclick="enquireNow()"
+                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_2.jpg&phone=+916379473471"
+                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="enquire shadow-lg">
-                                <h4>Red Lava</h4>
-                                <p>Description about the Red Lava</p>
-                                <a onclick="enquireNow()"
-                                    href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/gal7.jpeg&phone=+916379473471"
-                                    class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
+                            <div class="gallery-item">
+                                <div class="">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Red lava</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="./assets/images/10.5_plain/10.5plain_3.jpg" height="300px"
+                                            width="100%" alt="" />
+
+                                    </div>
+                                    <div class="enquire shadow-lg">
+                                        <h4>Red Lava</h4>
+                                        <p>Description about the Red Lava</p>
+                                        <a onclick="enquireNow()"
+                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_3.jpg&phone=+916379473471"
+                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="gallery-item">
+                                <div class="">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Red lava</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="./assets/images/10.5_plain/10.5plain_4.jpg" height="300px"
+                                            width="100%" alt="" />
+
+                                    </div>
+                                    <div class="enquire shadow-lg">
+                                        <h4>Red Lava</h4>
+                                        <p>Description about the Red Lava</p>
+                                        <a onclick="enquireNow()"
+                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_4.jpg&phone=+916379473471"
+                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="">
+                                    <div class="inside">
+                                        <div class="details">
+                                            <div class="text">
+                                                <h2>Red lava</h2>
+                                                <p>Logo</p>
+                                            </div>
+                                        </div>
+                                        <div class="overlay"></div>
+                                        <img src="./assets/images/10.5_plain/10.5plain_5.jpg" height="300px"
+                                            width="100%" alt="" />
+
+                                    </div>
+                                    <div class="enquire shadow-lg">
+                                        <h4>Red Lava</h4>
+                                        <p>Description about the Red Lava</p>
+                                        <a onclick="enquireNow()"
+                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_5.jpg&phone=+916379473471"
+                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div> -->
+
                         </div>
+                        <!-- 10 y yards oneside ends -->
+                        <div class="tab-pane" id="tenyards40" role="tabpanel" aria-labelledby="tenyards40-tab">
+                            tenyards40</div>
+                        <div class="tab-pane" id="tenyardsdoubleside" role="tabpanel"
+                            aria-labelledby="tenyardsdoubleside-tab">tenyardsdoubleside</div>
+                        <div class="tab-pane" id="tenyardspoonam" role="tabpanel" aria-labelledby="tenyardspoonam-tab">
+                            tenyardspoonam</div>
+                        <div class="tab-pane" id="tenyardssudesi" role="tabpanel" aria-labelledby="tenyardssudesi-tab">
+                            tenyardssudesi</div>
                     </div>
 
-                    <a class="gallery-item logo" href="#" data-cat="logo">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Logo</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROOTJ-mbTPHyoBoxv0wJN8xIGa1vU56pmbpA&s" height="300px" width="100%" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item web" href="#" data-cat="web">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Web</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1082" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item 6yards" href="#" data-cat="6yards">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Print</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1081" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item strategy" href="#" data-cat="strategy">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Strategy</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1080" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item strategy web print" href="#" data-cat="strategy web print">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Strategy. Web. Print.</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1079" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item web" href="#" data-cat="web">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Web.</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1078" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item strategy" href="#" data-cat="strategy">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Strategy.</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1077" alt="" />
-                        </div>
-                    </a>
-
-                    <a class="gallery-item web strategy" href="#" data-cat="web strategy">
-                        <div class="inside">
-                            <div class="details">
-                                <div class="text">
-                                    <h2>Client Name</h2>
-                                    <p>Strategy. Web.</p>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                            <img src="https://unsplash.it/500/500?image=1076" alt="" />
-                        </div>
-                    </a>
-
-                </div><!--/gallery-->
-
+                </div>
+                <div class="tab-pane" id="sixyards" role="tabpanel" aria-labelledby="sixyards-tab">
+                    6
+                </div>
             </div>
+
         </section>
         <!-- main ends -->
 
         <!-- footer starts  -->
-        <section>
+         <section>
             <div class="py-5 container bg-light position-relative rounded shadow-lg">
                 <div class="row">
                     <div class="col-md-12 text-center">
