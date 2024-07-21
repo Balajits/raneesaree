@@ -64,7 +64,7 @@
             <div class="row ">
                 <div class="col-md-8 offset-md-2">
                     <div class="lc-block text-center">
-                        <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+                        <span editable="inline" class="small mt-4 d-block">Made By Humans Worn By Aesthetic</span>
                         <h2 editable="inline" class="display-2 mb-0"><b>Our Products</b></h2>
                         <p editable="inline"> We are committed to working with our
                             <br> partners and customers to develop products that make a difference in the world.
@@ -95,19 +95,19 @@
                                 href="#tenyardsoneside" role="tab" aria-controls="tenyardsoneside"
                                 aria-selected="true">One side</a>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <!-- <li class="nav-item" role="presentation">
                             <a class="nav-link" id="tenyards40-tab" data-bs-toggle="tab" href="#tenyards40" role="tab"
                                 aria-controls="tenyards40" aria-selected="false">40 * 2</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="tenyardsdoubleside-tab" data-bs-toggle="tab"
                                 href="#tenyardsdoubleside" role="tab" aria-controls="tenyardsdoubleside"
                                 aria-selected="false">Double side</a>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <!-- <li class="nav-item" role="presentation">
                             <a class="nav-link" id="tenyardspoonam-tab" data-bs-toggle="tab" href="#tenyardspoonam"
                                 role="tab" aria-controls="tenyardspoonam" aria-selected="false">Poonam</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" id="tenyardssudesi-tab" data-bs-toggle="tab" href="#tenyardssudesi"
                                 role="tab" aria-controls="tenyardssudesi" aria-selected="false">Sudesi</a>
@@ -115,150 +115,42 @@
                     </ul>
                     <div class="tab-content pt-5" id="tab-content">
                         <!-- 10 yards oneside starts -->
-                        <select class="form-select form-select-sm" onchange="onselectdrop(event)" aria-label=".form-select-sm example">
-                            <option selected>select</option>
-                            <option value="plain">plain</option>
-                            <option value="wax">wax</option>
-                            <option value="screen">screen</option>
-                            <option value="block">block</option>
-                            <option value="tie&dye">tie & dye</option>
-                            <option value="bhatik">Bhatik</option>
-                            <option value="screenwax">screen wax</option>
-                            <option value="waxscreen">wax screen</option>
-                            <option value="waxblock">wax block</option>
-                            <option value="blockwax">block wax</option>
-                            <option value="artborder">Art border</option>
-                            <option value="crossdesign">Cross design</option>
-                            <option value="artscreenborder">Art screen border</option>
-                          </select>
+                        <div class="row m-0">
+                            <div class="col-4 text-cap">
+                                <label>Select Saree type</label>
+                                <select id="tenYardsSelect" class="form-select text-cap" onchange="onselectdrop(event)"
+                                    aria-label=".form-select-sm example">
+                                    <!-- <option selected>select</option> -->
+                                    <option selected value="ten_y_one_plain">plain</option>
+                                    <option value="ten_y_one_wax">wax</option>
+                                    <option value="ten_y_one_screen">screen</option>
+                                    <option value="ten_y_one_block">block</option>
+                                    <option value="ten_y_one_tie&dye">tie & dye</option>
+                                    <option value="ten_y_one_bhatik">Bhatik</option>
+                                    <option value="ten_y_one_screenwax">screen wax</option>
+                                    <option value="ten_y_one_waxscreen">wax screen</option>
+                                    <option value="ten_y_one_waxblock">wax block</option>
+                                    <option value="ten_y_one_blockwax">block wax</option>
+                                    <option value="ten_y_one_artborder">Art border</option>
+                                    <option value="ten_y_one_crossdesign">Cross design</option>
+                                    <option value="ten_y_one_artscreenborder">Art screen border</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="tab-pane active" id="tenyardsoneside" role="tabpanel"
                             aria-labelledby="tenyardsoneside-tab">
 
-                            <div id="test"></div>
-                            <!-- <div class="gallery-item">
-                                <div class="">
-                                    <div class="inside">
-                                        <div class="details">
-                                            <div class="text">
-                                                <h2>Red lava</h2>
-                                                <p>Logo</p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <img src="./assets/images/10.5_plain/10.5plain_1.jpg" height="300px"
-                                            width="100%" alt="" />
-
-                                    </div>
-                                    <div class="enquire shadow-lg">
-                                        <h4>Red Lava</h4>
-                                        <p>Description about the Red Lava</p>
-                                        <a onclick="enquireNow()"
-                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_1.jpg&phone=+916379473471"
-                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="">
-                                    <div class="inside">
-                                        <div class="details">
-                                            <div class="text">
-                                                <h2>Red lava</h2>
-                                                <p>Logo</p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <img src="./assets/images/10.5_plain/10.5plain_2.jpg" height="300px"
-                                            width="100%" alt="" />
-
-                                    </div>
-                                    <div class="enquire shadow-lg">
-                                        <h4>Red Lava</h4>
-                                        <p>Description about the Red Lava</p>
-                                        <a onclick="enquireNow()"
-                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_2.jpg&phone=+916379473471"
-                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="">
-                                    <div class="inside">
-                                        <div class="details">
-                                            <div class="text">
-                                                <h2>Red lava</h2>
-                                                <p>Logo</p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <img src="./assets/images/10.5_plain/10.5plain_3.jpg" height="300px"
-                                            width="100%" alt="" />
-
-                                    </div>
-                                    <div class="enquire shadow-lg">
-                                        <h4>Red Lava</h4>
-                                        <p>Description about the Red Lava</p>
-                                        <a onclick="enquireNow()"
-                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_3.jpg&phone=+916379473471"
-                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="">
-                                    <div class="inside">
-                                        <div class="details">
-                                            <div class="text">
-                                                <h2>Red lava</h2>
-                                                <p>Logo</p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <img src="./assets/images/10.5_plain/10.5plain_4.jpg" height="300px"
-                                            width="100%" alt="" />
-
-                                    </div>
-                                    <div class="enquire shadow-lg">
-                                        <h4>Red Lava</h4>
-                                        <p>Description about the Red Lava</p>
-                                        <a onclick="enquireNow()"
-                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_4.jpg&phone=+916379473471"
-                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gallery-item">
-                                <div class="">
-                                    <div class="inside">
-                                        <div class="details">
-                                            <div class="text">
-                                                <h2>Red lava</h2>
-                                                <p>Logo</p>
-                                            </div>
-                                        </div>
-                                        <div class="overlay"></div>
-                                        <img src="./assets/images/10.5_plain/10.5plain_5.jpg" height="300px"
-                                            width="100%" alt="" />
-
-                                    </div>
-                                    <div class="enquire shadow-lg">
-                                        <h4>Red Lava</h4>
-                                        <p>Description about the Red Lava</p>
-                                        <a onclick="enquireNow()"
-                                            href="whatsapp://send?text=Need to know about this product RED LAVA https://raneesarees.netlify.app/assets/images/10.5_plain/10.5plain_5.jpg&phone=+916379473471"
-                                            class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                            </div> -->
+                            <div id="test" class="flow-root"></div>
+                            
 
                         </div>
                         <!-- 10 y yards oneside ends -->
-                        <div class="tab-pane" id="tenyards40" role="tabpanel" aria-labelledby="tenyards40-tab">
-                            tenyards40</div>
+                        <!-- <div class="tab-pane" id="tenyards40" role="tabpanel" aria-labelledby="tenyards40-tab">
+                            tenyards40</div> -->
                         <div class="tab-pane" id="tenyardsdoubleside" role="tabpanel"
                             aria-labelledby="tenyardsdoubleside-tab">tenyardsdoubleside</div>
-                        <div class="tab-pane" id="tenyardspoonam" role="tabpanel" aria-labelledby="tenyardspoonam-tab">
-                            tenyardspoonam</div>
+                        <!-- <div class="tab-pane" id="tenyardspoonam" role="tabpanel" aria-labelledby="tenyardspoonam-tab">
+                            tenyardspoonam</div> -->
                         <div class="tab-pane" id="tenyardssudesi" role="tabpanel" aria-labelledby="tenyardssudesi-tab">
                             tenyardssudesi</div>
                     </div>
@@ -273,7 +165,7 @@
         <!-- main ends -->
 
         <!-- footer starts  -->
-         <section>
+        <section>
             <div class="py-5 container bg-light position-relative rounded shadow-lg">
                 <div class="row">
                     <div class="col-md-12 text-center">

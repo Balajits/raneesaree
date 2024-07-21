@@ -330,6 +330,7 @@ h1 {
 .inside img {
     float: left;
     width: 100%;
+    height: auto;
 }
 
 .overlay {
@@ -367,6 +368,7 @@ h1 {
     text-align: center;
     padding: 5px 5px;
     border: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .enquire-btn {
@@ -393,6 +395,18 @@ h1 {
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
     transform: translateY(-5px);
+}
+
+.flow-root {
+    display: flow-root;
+}
+
+.text-cap {
+    text-transform: capitalize;
+}
+
+.product-img {
+    object-fit: contain;
 }
 
 @media (max-width: 30em) {
