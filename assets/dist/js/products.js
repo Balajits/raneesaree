@@ -24,13 +24,21 @@
 
 // });
 
-function onselectdrop(e) {
-	console.log(e.target)
-	console.log(e.target.value);
-	var arr = { plain: 4, wax: 9 };
+(function onload() {
+	onselectdrop('ten_y_one_plain');
+	// document.getElementById("tenYardsSelect").value = 'plain';
+})();
 
-	var len = arr[e.target.value];
+function onselectdrop(e) {
+	console.log(e);
+	// console.log(e.target.value);
+	var arr = { ten_y_one_plain: 4, ten_y_one_wax: 9 };
+
+	var value = e.target ? e.target.value : e;
+	var len = arr[value];
 	console.log(len);
+	console.log(value);
+	
 
 
 	var arr = '';
@@ -45,7 +53,7 @@ function onselectdrop(e) {
                                             </div>
                                         </div>
                                         <div class="overlay"></div>
-                                        <img id=${e.target.value + '_' + i + 1} src="./assets/images/10.5_${e.target.value}/10.5${e.target.value}_${i + 1}.jpg" height="300px"
+                                        <img class="product-img" id=${value + '_' + i + 1} src="./assets/images/${value}/${value}_${i + 1}.jpg" height="300px"
                                             width="100%" alt="" />
 
                                     </div>
@@ -53,7 +61,7 @@ function onselectdrop(e) {
                                         <h4>Red Lava</h4>
                                         <p>Description about the Red Lava</p>
                                         <a
-                                            href="whatsapp://send?text=Need to know about this product https://raneesarees.netlify.app/assets/images/10.5_${e.target.value}/10.5${e.target.value}_${i + 1}.jpg&phone=+916379473471"
+                                            href="whatsapp://send?text=Need to know about this product https://raneesarees.netlify.app/assets/images/${value}/${value}_${i + 1}.jpg&phone=+916379473471"
                                             class="btn enquire-btn">Enquire Now<i class="px-3 bi bi-whatsapp"></i></a>
                                     </div>
                                 </div>
